@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "default_appearance": "glass-light",
+  "appearances": [
+    "classic",
+    "glass-light",
+    "glass-dark"
+  ],
+  "files": {
+    "tokens.css": {
+      "sha256": "ff8588e05556d89399efde364a276f89d1ec51608090558aa40a00e2ce3e57e6"
+    },
+    "appearance.css": {
+      "sha256": "53acdee0879e690ee12cb7f0797b4d0205239f288ec96ed4c667c1a91d117d28"
+    },
+    "presets.json": {
+      "sha256": "ab65575972d8075bf82c7bd7d1295a1e47a064e2d8850ffc8e35c472893aa036"
+    }
+  }
+}

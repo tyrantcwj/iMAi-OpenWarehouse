@@ -1,0 +1,9 @@
+{
+  "id": "classic",
+  "name": "经典蓝",
+  "description": "系统原有外观：蓝色主色、浅灰底、8px 圆角。所有主题的基线，取值见 themes/tokens.css。",
+  "author": "iMAISaas",
+  "version": "1.0.0",
+  "engine": 1,
+  "preview": ["#2563eb", "#eef2f7", "#172033", "#16a34a"]
+}

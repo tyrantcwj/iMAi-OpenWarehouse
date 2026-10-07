@@ -1,0 +1,534 @@
+/* Fixed appearances: classic, glass-light, glass-dark. Shared UX styles below. */
+
+html[data-theme="glass-light"] {
+  --legal-bg: #f3f4fb;
+  --legal-surface: rgba(255, 255, 255, 0.72);
+  --legal-surface-strong: #ffffff;
+  --legal-border: rgba(119, 130, 180, 0.18);
+  --legal-border-strong: rgba(95, 108, 164, 0.34);
+  --legal-text: #303659;
+  --legal-muted: #68718c;
+  --legal-accent: #6675ee;
+  --legal-accent-strong: #4d5ddb;
+  --legal-accent-soft: rgba(102, 117, 238, 0.13);
+  --legal-sidebar-border: rgba(255, 255, 255, 0.76);
+  --legal-success: #26a995;
+  --legal-danger: #db6076;
+  --saas-shadow-sm: 0 6px 20px rgba(66, 75, 131, 0.07);
+  --saas-shadow-md: 0 18px 48px rgba(66, 75, 131, 0.11);
+  --saas-shadow-lg: 0 28px 72px rgba(66, 75, 131, 0.16);
+  --saas-radius-lg: 22px;
+  --nx-radius: 14px;
+  --nx-radius-lg: 22px;
+  --nx-surface-subtle: #f4f5fd;
+  --nx-primary-light: #eceeff;
+  --nx-primary-light-dim: #dfe4ff;
+  --nx-foreground-subtle: #929ab5;
+  --saas-glass-page: linear-gradient(148deg, #f8f9ff 0%, #eff2fb 53%, #f9f0f3 100%);
+  --saas-glass-panel: rgba(255, 255, 255, 0.67);
+  --saas-glass-panel-strong: rgba(255, 255, 255, 0.82);
+  --saas-glass-rail: rgba(255, 255, 255, 0.66);
+  --saas-glass-border: rgba(255, 255, 255, 0.88);
+  --saas-glass-highlight: rgba(255, 255, 255, 0.95);
+  --saas-glass-overlay: rgba(244, 246, 255, 0.66);
+  --saas-glass-shadow: 0 20px 54px rgba(76, 84, 144, 0.14);
+  --saas-glass-glow: 0 0 0 1px rgba(128, 139, 225, 0.13);
+  --saas-glass-orb-a: rgba(112, 149, 248, 0.3);
+  --saas-glass-orb-b: rgba(255, 169, 128, 0.26);
+  --saas-glass-orb-c: rgba(185, 148, 244, 0.28);
+  --saas-glass-blue: #6381ee;
+  --saas-glass-amber: #ee9a55;
+  --saas-glass-green: #4cbf9f;
+  --saas-glass-violet: #a879e3;
+  --saas-glass-blue-soft: rgba(99, 129, 238, 0.15);
+  --saas-glass-amber-soft: rgba(238, 154, 85, 0.15);
+  --saas-glass-green-soft: rgba(76, 191, 159, 0.15);
+  --saas-glass-violet-soft: rgba(168, 121, 227, 0.15);
+}
+
+html[data-theme="glass-dark"] {
+  --saas-color-scheme: dark;
+  --legal-bg: #0c0d24;
+  --legal-surface: rgba(25, 25, 62, 0.78);
+  --legal-surface-strong: #191937;
+  --legal-border: rgba(177, 160, 255, 0.22);
+  --legal-border-strong: rgba(190, 170, 255, 0.42);
+  --legal-text: #f2efff;
+  --legal-muted: #b7afd2;
+  --legal-accent: #ac8bff;
+  --legal-accent-strong: #c5aaff;
+  --legal-accent-soft: rgba(172, 139, 255, 0.2);
+  --legal-sidebar-border: rgba(190, 170, 255, 0.22);
+  --legal-success: #5ee1bf;
+  --legal-danger: #ff899f;
+  --saas-success-light: #163d3a;
+  --saas-success-ink: #8af0ce;
+  --saas-warning-light: #473322;
+  --saas-warning-ink: #ffcc87;
+  --saas-danger-light: #4d263c;
+  --saas-danger-ink: #ffadbf;
+  --saas-info-light: #302d60;
+  --saas-info-ink: #b6a8ff;
+  --saas-shadow-sm: 0 8px 22px rgba(4, 5, 22, 0.24);
+  --saas-shadow-md: 0 20px 54px rgba(3, 3, 20, 0.36);
+  --saas-shadow-lg: 0 30px 80px rgba(3, 3, 20, 0.5);
+  --saas-radius-lg: 22px;
+  --nx-radius: 14px;
+  --nx-radius-lg: 22px;
+  --nx-canvas-2: #10112c;
+  --nx-rail-bg: #171733;
+  --nx-surface: #1b1b3d;
+  --nx-surface-subtle: #25244b;
+  --nx-foreground-subtle: #9088b2;
+  --nx-primary-light: #302758;
+  --nx-primary-light-dim: #463371;
+  --nx-accent-blue: #a89bff;
+  --nx-warning: #ffc583;
+  --nx-info: #8ca9ff;
+  --nx-info-light: #252e5a;
+  --saas-glass-page: linear-gradient(145deg, #11122e 0%, #0b0b21 58%, #1c1035 100%);
+  --saas-glass-panel: rgba(25, 24, 59, 0.72);
+  --saas-glass-panel-strong: rgba(31, 29, 72, 0.86);
+  --saas-glass-rail: rgba(17, 17, 46, 0.78);
+  --saas-glass-border: rgba(181, 158, 255, 0.27);
+  --saas-glass-highlight: rgba(212, 191, 255, 0.4);
+  --saas-glass-overlay: rgba(42, 39, 89, 0.72);
+  --saas-glass-shadow: 0 24px 64px rgba(2, 2, 20, 0.44);
+  --saas-glass-glow: 0 0 28px rgba(144, 99, 255, 0.19);
+  --saas-glass-orb-a: rgba(92, 95, 235, 0.31);
+  --saas-glass-orb-b: rgba(204, 95, 215, 0.23);
+  --saas-glass-orb-c: rgba(121, 72, 245, 0.28);
+  --saas-glass-blue: #88a8ff;
+  --saas-glass-amber: #ffbd84;
+  --saas-glass-green: #65dfc6;
+  --saas-glass-violet: #c09bff;
+  --saas-glass-blue-soft: rgba(136, 168, 255, 0.19);
+  --saas-glass-amber-soft: rgba(255, 189, 132, 0.17);
+  --saas-glass-green-soft: rgba(101, 223, 198, 0.17);
+  --saas-glass-violet-soft: rgba(192, 155, 255, 0.18);
+}
+
+/* The layout refresh is shared by all three appearances, including classic. */
+html[data-theme] .app-shell {
+  position: relative;
+  isolation: isolate;
+  background: var(--saas-glass-page);
+  --shell-rail-w: 226px;
+  --shell-header-strip-h: 70px;
+  --shell-main-pad-x: clamp(1rem, 2.4vw, 2.5rem);
+  --shell-main-pad-y-top: 1.75rem;
+}
+html[data-theme] .app-shell::before,
+html[data-theme] .app-shell::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(40vw, 660px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(42px);
+  opacity: .7;
+  animation: glass-orbit 18s ease-in-out infinite alternate;
+}
+html[data-theme] .app-shell::before {
+  top: -27%;
+  right: 4%;
+  background: radial-gradient(circle, var(--saas-glass-orb-a), transparent 70%);
+}
+html[data-theme] .app-shell::after {
+  bottom: -34%;
+  left: 28%;
+  background: radial-gradient(circle, var(--saas-glass-orb-b), var(--saas-glass-orb-c), transparent 74%);
+  animation-delay: -9s;
+}
+html[data-theme] .app-shell .saas-main-col,
+html[data-theme] .app-shell .saas-rail { position: relative; z-index: 1; }
+html[data-theme] .app-shell .saas-rail.saas-rail--desk,
+html[data-theme] .app-shell .saas-rail.saas-rail--console {
+  background: var(--saas-glass-rail);
+  border-right: 1px solid var(--saas-glass-border);
+  box-shadow: var(--saas-glass-shadow);
+  backdrop-filter: blur(26px) saturate(150%);
+  color: var(--saas-heading);
+}
+html[data-theme] .app-shell .saas-rail-header-strip,
+html[data-theme] .app-shell .saas-rail-foot {
+  border-color: var(--saas-glass-border);
+}
+html[data-theme] .app-shell .desk-top-bar {
+  background: var(--saas-glass-rail);
+  border-color: var(--saas-glass-border);
+  backdrop-filter: blur(26px) saturate(150%);
+  box-shadow: 0 6px 30px var(--legal-accent-soft);
+}
+html[data-theme] .app-shell .desk-top-bar-title,
+html[data-theme] .app-shell .saas-rail-brand-name { color: var(--saas-heading); }
+html[data-theme] .app-shell .saas-rail-brand-sub,
+html[data-theme] .app-shell .nav-group-ico,
+html[data-theme] .app-shell .nav-chev { color: var(--saas-muted); }
+html[data-theme] .app-shell .saas-rail .nav-group--raised { margin: .14rem .45rem .3rem; }
+html[data-theme] .app-shell .saas-rail button.nav-group-head,
+html[data-theme] .app-shell .saas-rail .nav-group-head--static {
+  width: 100%;
+  margin: .18rem 0 0;
+  padding: .7rem .78rem;
+  min-height: 42px;
+  color: var(--saas-heading);
+  background: transparent;
+  border-color: transparent;
+  border-radius: var(--nx-radius);
+  transition: transform var(--saas-motion-base) var(--saas-motion-ease), background var(--saas-motion-base), box-shadow var(--saas-motion-base);
+}
+html[data-theme] .app-shell .saas-rail button.nav-group-head:hover,
+html[data-theme] .app-shell .saas-rail button.nav-group-head.is-open {
+  background: var(--saas-glass-panel);
+  border-color: var(--saas-glass-border);
+  box-shadow: var(--saas-shadow-sm);
+  transform: translateX(2px);
+  border-radius: var(--nx-radius);
+}
+html[data-theme] .app-shell .saas-rail .nav-group-body {
+  margin: .2rem 0 .36rem;
+  padding: .2rem;
+  border: 1px solid var(--saas-glass-border);
+  border-radius: var(--nx-radius);
+  background: var(--saas-glass-panel);
+  backdrop-filter: blur(14px);
+}
+html[data-theme] .app-shell .saas-rail .nav-sub {
+  min-height: 36px;
+  padding-block: .5rem;
+  color: var(--saas-muted);
+  border-left: 0;
+  border-radius: calc(var(--nx-radius) - 4px);
+}
+html[data-theme] .app-shell .saas-rail .nav-sub:hover {
+  background: var(--legal-accent-soft);
+  color: var(--saas-heading);
+}
+html[data-theme] .app-shell .saas-rail .nav-sub.is-active {
+  background: var(--legal-accent-soft);
+  color: var(--saas-primary);
+  border-left: 0;
+  box-shadow: inset 0 0 0 1px var(--legal-accent-soft);
+}
+html[data-theme] .app-shell .saas-rail .nav-sub.is-active::before {
+  content: "";
+  position: absolute;
+  left: .55rem;
+  top: 28%;
+  bottom: 28%;
+  width: 3px;
+  border-radius: var(--nx-radius-pill);
+  background: var(--saas-primary);
+  box-shadow: 0 0 12px var(--saas-primary);
+}
+html[data-theme] .app-shell .saas-rail .nav-sub.is-active::after { display: none; }
+html[data-theme] .app-shell .main-frame-scroll--desk,
+html[data-theme] .app-shell .main-frame-scroll--console { color: var(--saas-heading); }
+html[data-theme] .app-shell .appearance-switch {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: var(--nx-radius-pill);
+  border: 1px solid var(--saas-glass-border);
+  background: var(--saas-glass-panel-strong);
+  color: var(--saas-primary);
+  box-shadow: var(--saas-shadow-sm);
+  cursor: pointer;
+  transition: transform var(--saas-motion-base) var(--saas-motion-ease), box-shadow var(--saas-motion-base), background var(--saas-motion-base);
+}
+html[data-theme] .app-shell .appearance-switch:hover {
+  transform: translateY(-2px) rotate(10deg);
+  box-shadow: var(--saas-glass-shadow), var(--saas-glass-glow);
+}
+html[data-theme] .app-shell .appearance-switch:focus-visible,
+html[data-theme] .app-shell :is(.boss-dashboard-kpi, .boss-list-btn, .boss-action-item, .nav-sub):focus-visible {
+  outline: 3px solid var(--saas-primary);
+  outline-offset: 3px;
+}
+
+/* Dashboard: calm canvas, vivid signals, prominent values. */
+html[data-theme] .app-shell .content-inner--overview { gap: 18px; }
+html[data-theme] .app-shell .boss-dashboard-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(24px, 3vw, 38px);
+  border: 1px solid var(--saas-glass-border);
+  border-radius: calc(var(--saas-radius-lg) + 6px);
+  background: radial-gradient(circle at 82% 18%, var(--saas-glass-orb-c), transparent 40%),
+    linear-gradient(120deg, var(--saas-glass-panel-strong), var(--saas-glass-panel));
+  box-shadow: var(--saas-glass-shadow);
+  backdrop-filter: blur(28px) saturate(145%);
+  animation: glass-reveal .6s var(--saas-motion-ease) backwards;
+}
+html[data-theme] .app-shell .boss-dashboard-hero::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  right: -90px;
+  top: -160px;
+  border-radius: 50%;
+  border: 38px solid var(--saas-glass-orb-a);
+  opacity: .55;
+  pointer-events: none;
+}
+html[data-theme] .app-shell .boss-dashboard-hero-copy,
+html[data-theme] .app-shell .boss-dashboard-focus { position: relative; z-index: 1; }
+html[data-theme] .app-shell .boss-dashboard-date {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: var(--nx-radius-pill);
+  color: var(--saas-primary);
+  background: var(--legal-accent-soft);
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+html[data-theme] .app-shell .boss-dashboard-hero h1 {
+  color: var(--saas-heading);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 780;
+  letter-spacing: -.035em;
+  line-height: 1.18;
+}
+html[data-theme] .app-shell .boss-dashboard-hero-copy > p:not(.boss-dashboard-date) {
+  color: var(--saas-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+html[data-theme] .app-shell .boss-dashboard-quick-actions { margin-top: 22px; gap: 10px; }
+html[data-theme] .app-shell .boss-dashboard-quick-actions .p-button {
+  border-radius: var(--nx-radius-pill);
+  backdrop-filter: blur(10px);
+}
+html[data-theme] .app-shell .boss-dashboard-focus {
+  flex-basis: 205px;
+  margin: 2px 0;
+  padding: 18px;
+  border: 1px solid var(--saas-glass-border);
+  border-radius: var(--saas-radius-lg);
+  background: var(--saas-glass-panel);
+  box-shadow: var(--saas-shadow-sm);
+}
+html[data-theme] .app-shell .boss-dashboard-focus-label { color: var(--saas-primary); }
+html[data-theme] .app-shell .boss-dashboard-focus strong {
+  color: var(--saas-heading);
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 800;
+  letter-spacing: -.07em;
+  font-variant-numeric: tabular-nums;
+}
+html[data-theme] .app-shell .boss-dashboard-focus small,
+html[data-theme] .app-shell .boss-dashboard-focus time { color: var(--saas-muted); }
+html[data-theme] .app-shell .boss-dashboard-kpis { gap: 14px; }
+html[data-theme] .app-shell .boss-dashboard-kpi {
+  position: relative;
+  min-height: 124px;
+  grid-template-columns: 52px minmax(0, 1fr) 18px;
+  gap: 13px;
+  padding: 18px;
+  border: 1px solid var(--saas-glass-border);
+  border-radius: var(--saas-radius-lg);
+  background: var(--saas-glass-panel-strong);
+  backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: var(--saas-shadow-md);
+  transition: transform .35s var(--saas-motion-ease), box-shadow .35s var(--saas-motion-ease), border-color .35s;
+  animation: glass-reveal .65s var(--saas-motion-ease) backwards;
+}
+html[data-theme] .app-shell .boss-dashboard-kpi:nth-child(2) { animation-delay: 60ms; }
+html[data-theme] .app-shell .boss-dashboard-kpi:nth-child(3) { animation-delay: 120ms; }
+html[data-theme] .app-shell .boss-dashboard-kpi:nth-child(4) { animation-delay: 180ms; }
+html[data-theme] .app-shell .boss-dashboard-kpi:hover {
+  transform: translateY(-6px);
+  border-color: var(--legal-border-strong);
+  box-shadow: var(--saas-glass-shadow), var(--saas-glass-glow);
+}
+html[data-theme] .app-shell .boss-dashboard-kpi-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: var(--saas-glass-blue-soft);
+  color: var(--saas-glass-blue);
+  box-shadow: inset 0 0 0 1px var(--saas-glass-highlight), 0 8px 18px var(--saas-glass-blue-soft);
+  font-size: 20px;
+}
+html[data-theme] .app-shell .boss-dashboard-kpi--amber .boss-dashboard-kpi-icon { background: var(--saas-glass-amber-soft); color: var(--saas-glass-amber); box-shadow: 0 8px 18px var(--saas-glass-amber-soft); }
+html[data-theme] .app-shell .boss-dashboard-kpi--green .boss-dashboard-kpi-icon { background: var(--saas-glass-green-soft); color: var(--saas-glass-green); box-shadow: 0 8px 18px var(--saas-glass-green-soft); }
+html[data-theme] .app-shell .boss-dashboard-kpi--violet .boss-dashboard-kpi-icon { background: var(--saas-glass-violet-soft); color: var(--saas-glass-violet); box-shadow: 0 8px 18px var(--saas-glass-violet-soft); }
+html[data-theme] .app-shell .boss-dashboard-kpi-copy > span { color: var(--saas-muted); font-weight: 650; }
+html[data-theme] .app-shell .boss-dashboard-kpi-copy > strong {
+  margin: 5px 0 3px;
+  color: var(--saas-heading);
+  font-size: clamp(30px, 3vw, 38px);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  font-variant-numeric: tabular-nums;
+}
+html[data-theme] .app-shell .boss-dashboard-kpi-copy > small { color: var(--saas-muted); }
+html[data-theme] .app-shell .boss-dashboard-kpi-arrow { color: var(--saas-primary); }
+html[data-theme] .app-shell .boss-dashboard-grid { gap: 16px; }
+html[data-theme] .app-shell .boss-panel {
+  min-height: 300px;
+  padding: 22px;
+  border: 1px solid var(--saas-glass-border);
+  border-radius: var(--saas-radius-lg);
+  background: var(--saas-glass-panel);
+  backdrop-filter: blur(24px) saturate(140%);
+  box-shadow: var(--saas-shadow-md);
+  animation: glass-reveal .7s var(--saas-motion-ease) backwards;
+}
+html[data-theme] .app-shell .boss-panel:nth-child(even) { animation-delay: 90ms; }
+html[data-theme] .app-shell .boss-panel h2 { color: var(--saas-heading); font-size: 19px; font-weight: 760; }
+html[data-theme] .app-shell .boss-panel-head p,
+html[data-theme] .app-shell :is(.boss-list-meta, .boss-list-text, .boss-empty span, .boss-action-copy small) { color: var(--saas-muted); }
+html[data-theme] .app-shell :is(.boss-list-btn, .boss-action-item, .boss-empty, .boss-panel-loading) {
+  border: 1px solid var(--saas-glass-border);
+  border-radius: var(--nx-radius);
+  background: var(--saas-glass-panel-strong);
+  color: var(--saas-heading);
+}
+html[data-theme] .app-shell :is(.boss-list-btn, .boss-action-item):hover {
+  transform: translateX(4px);
+  background: var(--saas-glass-overlay);
+  border-color: var(--legal-border-strong);
+  box-shadow: var(--saas-shadow-sm);
+}
+html[data-theme] .app-shell :is(.boss-list-title, .boss-empty strong, .boss-action-copy strong) { color: var(--saas-heading); }
+html[data-theme] .app-shell .boss-list-btn--mail { background: var(--saas-glass-amber-soft); }
+html[data-theme] .app-shell .boss-list-text--todo { color: var(--saas-glass-amber); }
+html[data-theme] .app-shell .boss-action-item.is-high { background: var(--saas-danger-light); }
+html[data-theme] .app-shell .boss-action-item.is-done { background: var(--saas-success-light); }
+html[data-theme] .app-shell .boss-action-icon { background: var(--saas-glass-blue-soft); color: var(--saas-glass-blue); border-radius: var(--nx-radius); }
+html[data-theme] .app-shell .boss-action-item.is-high .boss-action-icon { background: var(--saas-danger-light); color: var(--saas-danger-ink); }
+html[data-theme] .app-shell .boss-action-item.is-done .boss-action-icon { background: var(--saas-success-light); color: var(--saas-success-ink); }
+
+/* Shared panels, forms and mail surfaces retain readable contrast in both modes. */
+html[data-theme] .app-shell :is(.mail-pane, .mail-ai-aside-view, .project-card, .portal-card, .console-flat-pane, .timesheet-calendar-pane, .timesheet-form-pane),
+body .p-card,
+body .p-dialog,
+body .p-popover,
+body .p-overlaypanel {
+  background: var(--saas-glass-panel-strong) !important;
+  border-color: var(--saas-glass-border) !important;
+  border-radius: var(--saas-radius-lg) !important;
+  box-shadow: var(--saas-shadow-md) !important;
+  backdrop-filter: blur(22px) saturate(135%);
+  color: var(--saas-heading);
+}
+html[data-theme] .app-shell :is(.mail-row, .mail-ai-board-card, .portal-card, .project-card) {
+  border-radius: var(--nx-radius);
+  transition: transform var(--saas-motion-base) var(--saas-motion-ease), background var(--saas-motion-base), box-shadow var(--saas-motion-base);
+}
+html[data-theme] .app-shell :is(.mail-row, .mail-ai-board-card):hover {
+  transform: translateY(-2px);
+  box-shadow: var(--saas-shadow-sm);
+}
+html[data-theme] .app-shell :is(.mail-row.is-on, .mail-feishu-task-item.is-selected) {
+  background: var(--legal-accent-soft);
+  border-color: var(--legal-border-strong);
+}
+html[data-theme] .app-shell :is(.mail-row-subj, .mail-row-who, .mail-ai-board-card-title) { color: var(--saas-heading); }
+html[data-theme] .app-shell :is(.mail-row-time, .mail-row-sum, .mail-ai-board-card-meta) { color: var(--saas-muted); }
+html[data-theme] .app-shell :is(.mail-pane, .mail-ai-aside-view, .console-flat-pane) { color: var(--saas-heading); }
+html[data-theme] .app-shell .p-inputtext,
+html[data-theme] .app-shell textarea,
+html[data-theme] .app-shell .p-select {
+  border-radius: var(--nx-radius);
+}
+html[data-theme] .app-shell .p-button { transition: transform var(--saas-motion-base) var(--saas-motion-ease), box-shadow var(--saas-motion-base); }
+html[data-theme] .app-shell .p-button:not(:disabled):hover { transform: translateY(-2px); box-shadow: var(--saas-shadow-sm); }
+
+html[data-theme="glass-dark"] .app-shell :is(.mail-row, .mail-ai-board-card, .boss-list-btn, .boss-action-item, .portal-card, .project-card) {
+  background: var(--saas-glass-panel-strong);
+  border-color: var(--saas-glass-border);
+  color: var(--saas-heading);
+}
+html[data-theme="glass-dark"] .app-shell :is(.mail-pane, .mail-detail-card, .mail-reader-area, .console-form-panel, .knowledge-wiki-panel) {
+  color: var(--saas-heading);
+}
+html[data-theme="glass-dark"] .app-shell :is(.module-page-title, .section-subtitle, .card-header-title, .portal-card-title, .project-card-title),
+html[data-theme="glass-dark"] body .p-card-title { color: var(--saas-heading); }
+
+/* Login uses the same visual language before a session exists. */
+html[data-theme] .login-wrap {
+  background: var(--saas-glass-page);
+  color: var(--saas-heading);
+}
+html[data-theme] .login-wrap::before {
+  background: radial-gradient(circle at 22% 32%, var(--saas-glass-orb-a), transparent 35%),
+    radial-gradient(circle at 76% 75%, var(--saas-glass-orb-c), transparent 42%);
+}
+html[data-theme] .login-wrap::after { display: none; }
+html[data-theme] .login-hero-pane {
+  background: var(--saas-glass-rail);
+  border-color: var(--saas-glass-border);
+  backdrop-filter: blur(28px) saturate(150%);
+}
+html[data-theme] .login-wrap :is(.hero-dashboard, .hero-stat, .hero-table, .hero-float-card, .install-wizard-entry) {
+  background: var(--saas-glass-panel-strong);
+  border-color: var(--saas-glass-border);
+  border-radius: var(--nx-radius);
+  box-shadow: var(--saas-shadow-md);
+  backdrop-filter: blur(18px);
+}
+html[data-theme] .login-wrap :is(.hero-dashboard-top, .hero-dashboard-side, .hero-dashboard-side i) {
+  background: var(--saas-glass-panel);
+  border-color: var(--saas-glass-border);
+  color: var(--saas-muted);
+}
+html[data-theme] .login-wrap .hero-dashboard-top span:first-child,
+html[data-theme] .login-wrap .hero-float-card i { background: var(--saas-glass-blue); }
+html[data-theme] .login-wrap .hero-dashboard-top span:nth-child(2),
+html[data-theme] .login-wrap .hero-float-card--right i { background: var(--saas-glass-green); }
+html[data-theme] .login-wrap .hero-stat strong { background: linear-gradient(90deg, var(--saas-glass-blue), var(--saas-glass-violet)); }
+html[data-theme] .login-wrap .hero-stat--wide { background: var(--saas-glass-blue-soft); }
+html[data-theme] .login-wrap .hero-dashboard-side i:first-child { color: var(--saas-glass-blue); background: var(--saas-glass-blue-soft); }
+html[data-theme] .login-wrap .hero-dashboard { border-radius: calc(var(--saas-radius-lg) + 8px); transform: rotate(-2deg); animation: glass-reveal .7s var(--saas-motion-ease) backwards; }
+html[data-theme] .login-wrap .hero-float-card { animation: glass-reveal .9s var(--saas-motion-ease) backwards; }
+html[data-theme] .login-wrap .hero-float-card--right { animation-delay: 150ms; }
+html[data-theme] .login-wrap .login-card {
+  background: var(--saas-glass-panel-strong) !important;
+  border: 1px solid var(--saas-glass-border);
+  border-radius: calc(var(--saas-radius-lg) + 6px);
+  box-shadow: var(--saas-glass-shadow);
+  backdrop-filter: blur(28px) saturate(140%);
+}
+html[data-theme] .login-wrap :is(.login-title, .field-label) { color: var(--saas-heading); }
+html[data-theme] .login-wrap :is(.text-muted, .field-hint) { color: var(--saas-muted); }
+html[data-theme] .login-wrap :is(.login-btn, .install-wizard-btn) { border-radius: var(--nx-radius); }
+html[data-theme] .login-wrap .p-inputtext { border-radius: var(--nx-radius); }
+
+@keyframes glass-reveal {
+  from { opacity: 0; transform: translateY(16px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes glass-orbit {
+  from { transform: translate3d(-3%, -2%, 0) scale(.96); }
+  to { transform: translate3d(5%, 4%, 0) scale(1.08); }
+}
+@media (max-width: 760px) {
+  html[data-theme] .app-shell { --shell-main-pad-x: 1rem; --shell-main-pad-y-top: 1rem; }
+  html[data-theme] .app-shell .boss-dashboard-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html[data-theme] .app-shell .boss-dashboard-hero { padding: 22px; }
+  html[data-theme] .app-shell .boss-dashboard-focus { flex-basis: auto; }
+}
+@media (max-width: 540px) {
+  html[data-theme] .app-shell .boss-dashboard-kpis { grid-template-columns: 1fr; }
+  html[data-theme] .app-shell .boss-dashboard-kpi { min-height: 100px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme] .app-shell::before,
+  html[data-theme] .app-shell::after,
+  html[data-theme] .app-shell :is(.boss-dashboard-hero, .boss-dashboard-kpi, .boss-panel) {
+    animation: none !important;
+  }
+  html[data-theme] .login-wrap :is(.hero-dashboard, .hero-float-card) { animation: none !important; }
+  html[data-theme] .app-shell :is(.boss-dashboard-kpi, .boss-list-btn, .boss-action-item, .nav-sub, .p-button, .appearance-switch) {
+    transition-duration: .01ms !important;
+  }
+}

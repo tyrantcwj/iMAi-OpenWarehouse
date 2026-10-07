@@ -1,0 +1,113 @@
+/* ==========================================================================
+   令牌契约（Token Contract）—— 全站设计令牌的唯一来源
+   --------------------------------------------------------------------------
+   这里的取值就是 classic（经典）主题的外观，也是所有主题插件的「基线」。
+   主题插件（themes/<id>/tokens.json）只写要覆盖的令牌，其余自动沿用这里。
+
+   规则：
+   1. 需要新令牌 → 加在这里（给出 classic 取值），再到各主题 tokens.json 里覆盖。
+      不要只在某个主题里凭空发明令牌：切到别的主题时它会变成未定义。
+   2. 不要在 app.css 或组件里重新声明 :root 令牌，会和主题覆盖打架。
+   3. 本文件在 main.ts 里排在 app.css 之后引入，保证它是最终基线。
+   详见 themes/README.md。
+   ========================================================================== */
+:root {
+  color-scheme: light;
+
+  /* ---- 基础色 ---- */
+  --legal-bg: #eef2f7;
+  --legal-surface: rgba(255, 255, 255, 0.88);
+  --legal-surface-strong: #ffffff;
+  --legal-border: #dfe6ef;
+  --legal-border-strong: #c8d3e1;
+  --legal-text: #172033;
+  --legal-muted: #69758a;
+  --legal-accent: #2563eb;
+  --legal-accent-strong: #1d4ed8;
+  --legal-accent-soft: rgba(37, 99, 235, 0.08);
+  --legal-sidebar-border: rgba(200, 211, 225, 0.72);
+  --legal-success: #16a34a;
+  --legal-danger: #dc2626;
+  --legal-font-ui: "Segoe UI", "PingFang SC", "Microsoft YaHei", "微软雅黑", ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- 语义别名（组件优先用这一层） ---- */
+  --saas-primary: var(--legal-accent);
+  --saas-bg: var(--legal-bg);
+  --saas-surface: var(--legal-surface);
+  --saas-border: var(--legal-border);
+  --saas-heading: var(--legal-text);
+  --saas-muted: var(--legal-muted);
+
+  /* ---- 语义状态色：浅底 + 深字（提示条、状态胶囊） ---- */
+  --saas-success-light: #f0fdf4;
+  --saas-success-ink: #15803d;
+  --saas-warning-light: #fffbeb;
+  --saas-warning-ink: #b45309;
+  --saas-danger-light: #fef2f2;
+  --saas-danger-ink: #b91c1c;
+  --saas-info-light: #eff6ff;
+  --saas-info-ink: #1d4ed8;
+
+  /* ---- 形状、投影、动效 ---- */
+  --saas-shadow-sm: 0 1px 2px rgba(31, 45, 61, 0.05);
+  --saas-shadow-md: 0 10px 36px rgba(31, 45, 61, 0.08);
+  --saas-shadow-lg: 0 20px 60px rgba(31, 45, 61, 0.12);
+  --saas-radius-lg: 8px;
+  --saas-motion-fast: 140ms;
+  --saas-motion-base: 240ms;
+  --saas-motion-slow: 420ms;
+  --saas-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- nx 组件令牌（桥接层） ----
+     xy / kinetic-horizon 分支的 nx 组件库使用 --nx-* 命名。
+     经典主题下把它们映射到上面的令牌，这样 nx 组件在任何主题下都能正常显示；
+     具体主题可以在 tokens.json 里直接覆盖 --nx-*。
+     注意：别在组件里写 var(--nx-xxx, ...) 同时又让 --nx-xxx 引用自己，会形成循环、整条声明失效。 */
+  --nx-background: var(--legal-bg);
+  --nx-canvas-2: var(--legal-bg);
+  --nx-rail-bg: var(--legal-surface-strong);
+  --nx-surface: var(--legal-surface-strong);
+  --nx-surface-subtle: #f1f5f9;
+  --nx-border: var(--legal-border);
+  --nx-border-strong: var(--legal-border-strong);
+  --nx-foreground: var(--legal-text);
+  --nx-foreground-muted: var(--legal-muted);
+  --nx-foreground-subtle: #94a3b8;
+  --nx-primary: var(--legal-accent);
+  --nx-primary-hover: var(--legal-accent-strong);
+  --nx-primary-light: #eff6ff;
+  --nx-primary-light-dim: #dbeafe;
+  --nx-accent-blue: #2563eb;
+  --nx-success: var(--legal-success);
+  --nx-success-light: var(--saas-success-light);
+  --nx-success-deep: #15803d;
+  --nx-success-soft: #dcfce7;
+  --nx-warning: #f59e0b;
+  --nx-warning-light: var(--saas-warning-light);
+  --nx-danger: var(--legal-danger);
+  --nx-danger-light: var(--saas-danger-light);
+  --nx-info: #0369a1;
+  --nx-info-light: #e0f2fe;
+  --nx-radius-sm: 4px;
+  --nx-radius: 8px;
+  --nx-radius-lg: 8px;
+  --nx-radius-pill: 999px;
+  --nx-shadow-sm: var(--saas-shadow-sm);
+  --nx-shadow-md: var(--saas-shadow-md);
+  --nx-font-sans: var(--legal-font-ui);
+  --nx-font-mono: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, "MiSans", monospace;
+
+  /* ---- 邮箱：关联标签（项目 / 供应商 / 会议）与逐句对照高亮 ---- */
+  --mail-tag-project-ink: #2563eb;
+  --mail-tag-project-bg: #eaf1ff;
+  --mail-tag-supplier-ink: #0f7b5f;
+  --mail-tag-supplier-bg: #e6f6f0;
+  --mail-tag-meeting-ink: #b45309;
+  --mail-tag-meeting-bg: #fdf1e3;
+  --mail-highlight: #dbe7ff;
+  --mail-highlight-strong: #c7d8ff;
+  --mail-selection: #b9cdfa;
+  --mail-unread-dot: var(--legal-accent);
+  --mail-on-accent: #ffffff; /* 主色按钮、头像上的文字 */
+  --mail-mask: rgba(15, 23, 42, 0.28);
+}

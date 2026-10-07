@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "default_appearance": "glass-light",
+  "appearances": [
+    {
+      "id": "glass-light",
+      "name": "流光 · 浅色",
+      "description": "轻盈毛玻璃与暖色数据焦点",
+      "preview": [
+        "#6877ef",
+        "#f3f4fb",
+        "#303659",
+        "#ee9a55"
+      ]
+    },
+    {
+      "id": "glass-dark",
+      "name": "星云 · 深色",
+      "description": "深海蓝紫与柔和霓虹光晕",
+      "preview": [
+        "#ac8bff",
+        "#0c0d24",
+        "#f2efff",
+        "#65dfc6"
+      ]
+    },
+    {
+      "id": "classic",
+      "name": "经典蓝",
+      "description": "原有蓝色配色，共享新版布局与交互",
+      "preview": [
+        "#2563eb",
+        "#eef2f7",
+        "#172033",
+        "#16a34a"
+      ]
+    }
+  ],
+  "charts": {
+    "classic": {
+      "palette": [
+        "#3b82f6",
+        "#22c55e",
+        "#f59e0b",
+        "#a855f7",
+        "#ef4444",
+        "#14b8a6"
+      ],
+      "text": "#334155",
+      "axis": "#e2e8f0"
+    },
+    "glass-light": {
+      "palette": [
+        "#6381ee",
+        "#ee9a55",
+        "#4cbf9f",
+        "#a879e3",
+        "#e66891",
+        "#5bbbd3"
+      ],
+      "text": "#303659",
+      "axis": "#dce1f1"
+    },
+    "glass-dark": {
+      "palette": [
+        "#a88cff",
+        "#ffbd84",
+        "#65dfc6",
+        "#88a8ff",
+        "#f68ebe",
+        "#77d3e2"
+      ],
+      "text": "#e8e5fb",
+      "axis": "#4a4775"
+    }
+  },
+  "prime_vue": {
+    "glass-light": {
+      "semantic": {
+        "primary": {
+          "50": "#eef0ff",
+          "100": "#e0e4ff",
+          "200": "#c8d0ff",
+          "300": "#a8b4fc",
+          "400": "#8898f4",
+          "500": "#6877ef",
+          "600": "#5b69de",
+          "700": "#4d5dc9",
+          "800": "#414eaa",
+          "900": "#353f88",
+          "950": "#242c60"
+        },
+        "colorScheme": {
+          "light": {
+            "primary": {
+              "color": "#6675ee",
+              "contrastColor": "#ffffff",
+              "hoverColor": "#4d5ddb",
+              "activeColor": "#414fc6"
+            },
+            "surface": {
+              "0": "#ffffff",
+              "50": "#f8f9ff",
+              "100": "#f1f3fb",
+              "200": "#e4e8f4",
+              "300": "#cbd2e7",
+              "400": "#9ca6c6",
+              "500": "#7480a1",
+              "600": "#596584",
+              "700": "#465171",
+              "800": "#364161",
+              "900": "#303659",
+              "950": "#242943"
+            },
+            "content": {
+              "background": "#ffffff",
+              "borderColor": "#e4e8f4",
+              "color": "#303659",
+              "hoverBackground": "#f3f4fb"
+            },
+            "text": {
+              "color": "#303659",
+              "mutedColor": "#68718c"
+            },
+            "formField": {
+              "background": "#ffffff",
+              "borderColor": "#cbd2e7",
+              "color": "#303659",
+              "placeholderColor": "#929ab5",
+              "borderRadius": "12px"
+            }
+          }
+        }
+      }
+    },
+    "glass-dark": {
+      "semantic": {
+        "primary": {
+          "50": "#f6f1ff",
+          "100": "#ebe0ff",
+          "200": "#d8c5ff",
+          "300": "#c7acff",
+          "400": "#b799ff",
+          "500": "#ac8bff",
+          "600": "#9b78f4",
+          "700": "#805ed4",
+          "800": "#6549ad",
+          "900": "#4c3882",
+          "950": "#302453"
+        },
+        "colorScheme": {
+          "light": {
+            "primary": {
+              "color": "#ac8bff",
+              "contrastColor": "#15132f",
+              "hoverColor": "#c5aaff",
+              "activeColor": "#d4bfff"
+            },
+            "surface": {
+              "0": "#0b0b21",
+              "50": "#11122e",
+              "100": "#191937",
+              "200": "#25244b",
+              "300": "#36345e",
+              "400": "#514d78",
+              "500": "#777093",
+              "600": "#aaa2c4",
+              "700": "#c3bbd6",
+              "800": "#ded8ec",
+              "900": "#f2efff",
+              "950": "#ffffff"
+            },
+            "content": {
+              "background": "#1b1a3c",
+              "borderColor": "#48426c",
+              "color": "#f2efff",
+              "hoverBackground": "#2b2852"
+            },
+            "text": {
+              "color": "#f2efff",
+              "mutedColor": "#b7afd2"
+            },
+            "formField": {
+              "background": "#232044",
+              "borderColor": "#514b77",
+              "color": "#f2efff",
+              "placeholderColor": "#aba3c8",
+              "borderRadius": "12px"
+            }
+          }
+        }
+      }
+    }
+  }
+}

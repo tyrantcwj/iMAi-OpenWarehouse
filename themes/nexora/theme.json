@@ -1,0 +1,9 @@
+{
+  "id": "nexora",
+  "name": "Nexora 靛蓝",
+  "description": "按 Nexora 设计稿：靛蓝主色、slate 中性色、实色卡片、16px 大圆角、更轻的投影、胶囊按钮。",
+  "author": "xie.yuan",
+  "version": "0.1.0",
+  "engine": 1,
+  "preview": ["#4f46e5", "#f8fafc", "#0f172a", "#10b981"]
+}

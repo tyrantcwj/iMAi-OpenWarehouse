@@ -1,0 +1,55 @@
+{
+  "semantic": {
+    "primary": {
+      "50": "#eef2ff",
+      "100": "#e0e7ff",
+      "200": "#c7d2fe",
+      "300": "#a5b4fc",
+      "400": "#818cf8",
+      "500": "#6366f1",
+      "600": "#4f46e5",
+      "700": "#4338ca",
+      "800": "#3730a3",
+      "900": "#312e81",
+      "950": "#1e1b4b"
+    },
+    "colorScheme": {
+      "light": {
+        "primary": {
+          "color": "#4f46e5",
+          "contrastColor": "#ffffff",
+          "hoverColor": "#4338ca",
+          "activeColor": "#3730a3"
+        },
+        "surface": {
+          "0": "#ffffff",
+          "50": "#f8fafc",
+          "100": "#f1f5f9",
+          "200": "#e2e8f0",
+          "300": "#cbd5e1",
+          "400": "#94a3b8",
+          "500": "#64748b",
+          "600": "#475569",
+          "700": "#334155",
+          "800": "#1e293b",
+          "900": "#0f172a",
+          "950": "#020617"
+        },
+        "content": {
+          "background": "#ffffff",
+          "borderColor": "#e2e8f0",
+          "color": "#0f172a",
+          "hoverBackground": "#f8fafc"
+        },
+        "text": { "color": "#0f172a", "mutedColor": "#64748b" },
+        "formField": {
+          "background": "#ffffff",
+          "borderColor": "#e2e8f0",
+          "color": "#0f172a",
+          "placeholderColor": "#94a3b8",
+          "borderRadius": "8px"
+        }
+      }
+    }
+  }
+}

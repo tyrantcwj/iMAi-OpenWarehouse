@@ -1,0 +1,30 @@
+/*
+ * Nexora 主题的样式微调 —— 只放「令牌表达不了」的差异，颜色/圆角/投影优先写进 tokens.json。
+ * 只在本主题生效：切走时整张样式表会被卸下，不需要自己加 [data-theme] 前缀。
+ * PrimeVue 的组件样式是懒注入的，覆盖它需要 !important。
+ */
+
+/* 卡片与弹层：轻投影、去掉毛玻璃（设计稿是实色卡片） */
+.p-card,
+.p-dialog,
+.p-popover,
+.p-overlaypanel {
+  box-shadow: var(--saas-shadow-sm) !important;
+  backdrop-filter: none !important;
+}
+
+/* 动作按钮统一胶囊形（阶段0 裁定：pill 999） */
+.p-button {
+  border-radius: var(--nx-radius-pill) !important;
+}
+
+/* 横幅与下拉浮层用内容级 12px 圆角（Aura 默认 6px，与 16px 卡片不协调） */
+.p-message,
+.p-select-panel,
+.p-multiselect-panel,
+.p-autocomplete-panel,
+.p-datepicker-panel,
+.p-popover,
+.p-overlaypanel {
+  border-radius: var(--nx-radius-lg) !important;
+}
