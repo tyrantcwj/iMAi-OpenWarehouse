@@ -1,20 +1,31 @@
 {
   "schema_version": 1,
-  "default_appearance": "glass-light",
+  "default_appearance": "classic",
   "appearances": [
     "classic",
-    "glass-light",
-    "glass-dark"
+    "nexora"
   ],
   "files": {
+    "classic/theme.json": {
+      "sha256": "a61f0c544b9334ce534c01ee1a105cc1ef5c5f258917ba38556fbe37336eb987"
+    },
+    "nexora/charts.json": {
+      "sha256": "64e959c66e1a4ffaf318c21ad2f03809ca168acace0a502c1f661cca0154856b"
+    },
+    "nexora/primevue.json": {
+      "sha256": "b92bb019b8faa4240730f07442b56a7bd5ade8825eccc6b00e6736df9aafd539"
+    },
+    "nexora/theme.css": {
+      "sha256": "943fdf8ec457d4691094637bc49c69f67c3074bd2308a8b3afc4ecb66d04e0cd"
+    },
+    "nexora/theme.json": {
+      "sha256": "4952afb31c0735dfaa6b406d78e4bf9dcf7099d96b8a3271684a3a94705f11e4"
+    },
+    "nexora/tokens.json": {
+      "sha256": "0122802841598e30619e3e52b365913b1e96644fe55d3170a9e623a98fdb6ce6"
+    },
     "tokens.css": {
-      "sha256": "ff8588e05556d89399efde364a276f89d1ec51608090558aa40a00e2ce3e57e6"
-    },
-    "appearance.css": {
-      "sha256": "53acdee0879e690ee12cb7f0797b4d0205239f288ec96ed4c667c1a91d117d28"
-    },
-    "presets.json": {
-      "sha256": "ab65575972d8075bf82c7bd7d1295a1e47a064e2d8850ffc8e35c472893aa036"
+      "sha256": "6b454021b95def8c2aeb7067757844df8d824e1edfa15449f83f21243fbf4bf7"
     }
   }
 }

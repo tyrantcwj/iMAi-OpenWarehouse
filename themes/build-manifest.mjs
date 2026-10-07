@@ -8,7 +8,7 @@ const names=['tokens.css'];
 for(const entry of await readdir(directory,{withFileTypes:true})){
   if(!entry.isDirectory())continue;
   let manifest;
-  try{manifest=JSON.parse(await readFile(new URL(entry.name+'/theme.json',directory),'utf8')))}catch(error){if(error.code==='ENOENT')continue;throw error}
+  try{manifest=JSON.parse(await readFile(new URL(entry.name+'/theme.json',directory),'utf8'))}catch(error){if(error.code==='ENOENT')continue;throw error}
   if(!/^[a-z][a-z0-9-]{0,31}$/.test(entry.name)||manifest.id!==entry.name||manifest.engine!==1){throw Error('Invalid theme manifest: '+entry.name)}
   ids.push(entry.name);
   for(const name of await readdir(new URL(entry.name+'/',directory))){
