@@ -1,0 +1,14 @@
+{
+  "id": "cream",
+  "name": "奶油黄",
+  "description": "清晰的主要操作，安静的留白，黄色展开点缀",
+  "author": "iMAi",
+  "version": "1.0.0",
+  "engine": 1,
+  "preview": [
+    "#f4df98",
+    "#faf9f5",
+    "#302e28",
+    "#d3ac3f"
+  ]
+}

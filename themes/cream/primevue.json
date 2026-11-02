@@ -1,0 +1,89 @@
+{
+  "semantic": {
+    "primary": {
+      "50": "#fffbed",
+      "100": "#fcf1c9",
+      "200": "#f4df98",
+      "300": "#ecd181",
+      "400": "#dfb952",
+      "500": "#caa037",
+      "600": "#a88025",
+      "700": "#806415",
+      "800": "#685011",
+      "900": "#514012",
+      "950": "#302708"
+    },
+    "colorScheme": {
+      "light": {
+        "primary": {
+          "color": "#806415",
+          "contrastColor": "#ffffff",
+          "hoverColor": "#685011",
+          "activeColor": "#514012"
+        },
+        "surface": {
+          "0": "#ffffff",
+          "50": "#faf9f5",
+          "100": "#f5f3ed",
+          "200": "#e8e5dc",
+          "300": "#cbc5b5",
+          "400": "#a39b88",
+          "500": "#817965",
+          "600": "#6a6353",
+          "700": "#534d40",
+          "800": "#3e392f",
+          "900": "#302e28",
+          "950": "#201e19"
+        },
+        "content": {
+          "background": "#ffffff",
+          "borderColor": "#e8e5dc",
+          "color": "#302e28",
+          "hoverBackground": "#f5f3ed"
+        },
+        "text": {
+          "color": "#302e28",
+          "mutedColor": "#777367",
+          "hoverColor": "#302e28",
+          "hoverMutedColor": "#5e594d"
+        },
+        "formField": {
+          "background": "#ffffff",
+          "borderColor": "#cbc5b5",
+          "hoverBorderColor": "#a39b88",
+          "focusBorderColor": "#a88025",
+          "color": "#302e28",
+          "placeholderColor": "#817965",
+          "borderRadius": "8px"
+        },
+        "highlight": {
+          "background": "#fbf3d6",
+          "focusBackground": "#f5e6b8",
+          "color": "#685011",
+          "focusColor": "#514012"
+        }
+      }
+    }
+  },
+  "components": {
+    "button": {
+      "colorScheme": {
+        "light": {
+          "root": {
+            "primary": {
+              "background": "#f4df98",
+              "hoverBackground": "#ecd181",
+              "activeBackground": "#dfbf68",
+              "borderColor": "#f4df98",
+              "hoverBorderColor": "#ecd181",
+              "activeBorderColor": "#dfbf68",
+              "color": "#443919",
+              "hoverColor": "#443919",
+              "activeColor": "#443919"
+            }
+          }
+        }
+      }
+    }
+  }
+}

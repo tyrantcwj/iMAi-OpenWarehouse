@@ -97,6 +97,15 @@
   --nx-font-sans: var(--legal-font-ui);
   --nx-font-mono: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, "MiSans", monospace;
 
+  /* ---- 主要操作与渐进展开：填充与文字分开，浅色主题保持对比度 ---- */
+  --saas-action-bg: var(--saas-primary);
+  --saas-action-ink: #ffffff;
+  --saas-action-hover: var(--legal-accent-strong);
+  --saas-disclosure-accent: var(--saas-primary);
+  --saas-disclosure-soft: var(--legal-accent-soft);
+  --saas-text-secondary: #475569;
+  --saas-on-danger: #ffffff;
+
   /* ---- 邮箱：关联标签（项目 / 供应商 / 会议）与逐句对照高亮 ---- */
   --mail-tag-project-ink: #2563eb;
   --mail-tag-project-bg: #eaf1ff;

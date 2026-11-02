@@ -1,0 +1,78 @@
+/* Cream is a skin only. Layout and disclosure behavior stay in the application. */
+body, #app, .app-shell {
+  background: var(--saas-bg) !important;
+}
+body::before { background-image: none; }
+.saas-rail.saas-rail--desk, .saas-rail.saas-rail--console {
+  background: var(--nx-rail-bg) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+.desk-top-bar { background: var(--legal-surface-strong) !important; backdrop-filter: none !important; }
+.p-card, .p-dialog, .p-popover, .p-overlaypanel {
+  background: var(--legal-surface-strong) !important;
+  backdrop-filter: none !important;
+  box-shadow: var(--saas-shadow-sm) !important;
+}
+.p-dialog, .p-popover, .p-overlaypanel { box-shadow: var(--saas-shadow-md) !important; }
+.p-card, .p-dialog { border-radius: var(--saas-radius-lg) !important; }
+.p-button, .saas-act { border-radius: var(--nx-radius) !important; box-shadow: none !important; }
+.p-button:not(.p-button-text):not(.p-button-link):not(.p-button-outlined):not(.p-button-secondary):not(.p-button-danger):not(.p-button-success):not(.p-button-warn):not(.p-button-info):not(.p-button-help):not(.p-button-contrast) {
+  background: var(--saas-action-bg) !important;
+  border-color: var(--saas-action-bg) !important;
+  color: var(--saas-action-ink) !important;
+}
+.p-button:not(.p-button-text):not(.p-button-link):not(.p-button-outlined):not(.p-button-secondary):not(.p-button-danger):not(.p-button-success):not(.p-button-warn):not(.p-button-info):not(.p-button-help):not(.p-button-contrast):enabled:hover {
+  background: var(--saas-action-hover) !important;
+  border-color: var(--saas-action-hover) !important;
+}
+.p-button-secondary:not(.p-button-text):not(.p-button-outlined) {
+  background: var(--nx-surface-subtle) !important;
+  border-color: var(--saas-border) !important;
+  color: var(--saas-text-secondary) !important;
+}
+.p-inputtext, .p-password-input, .p-select, .p-multiselect, .p-textarea, .p-inputnumber-input {
+  background: var(--legal-surface-strong);
+  box-shadow: none;
+}
+.p-inputtext:enabled:focus, .p-textarea:enabled:focus, .p-select.p-focus, .p-multiselect.p-focus, .p-inputnumber-input:enabled:focus {
+  border-color: var(--saas-disclosure-accent);
+  box-shadow: 0 0 0 2px var(--saas-disclosure-soft);
+}
+.p-datatable-header-cell { background: var(--nx-surface-subtle) !important; color: var(--saas-text-secondary) !important; }
+.p-datatable-tbody > tr { background: var(--legal-surface-strong); }
+.p-datatable-tbody > tr:hover { background: var(--nx-surface-subtle); }
+.p-tab-active { color: var(--saas-heading) !important; border-color: var(--saas-disclosure-accent) !important; }
+.p-tablist-active-bar { background: var(--saas-disclosure-accent) !important; }
+.saas-rail .nav-group-head, .saas-rail .nav-group-body {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.saas-rail .nav-group-head { font-weight: 600 !important; }
+.saas-rail .nav-sub.is-active {
+  background: var(--legal-accent-soft) !important;
+  border-left-color: var(--saas-disclosure-accent) !important;
+  color: var(--saas-heading) !important;
+}
+.saas-rail .nav-sub.is-active::after { background: var(--saas-disclosure-accent) !important; animation: none !important; }
+.saas-rail .nav-chev { color: var(--saas-primary); }
+.saas-rail-avatar { background: var(--saas-action-bg) !important; color: var(--saas-action-ink) !important; box-shadow: none !important; }
+.saas-rail-brand-logo { filter: none !important; }
+.home-hero, .welcome-banner, .project-card, .supplier-card, .app-module-card {
+  background: var(--legal-surface-strong) !important;
+  box-shadow: var(--saas-shadow-sm) !important;
+}
+.login-wrap, .login-wrap::before { background: var(--saas-bg) !important; }
+.login-wrap::after { background-image: none !important; }
+.login-hero-pane { background: var(--legal-accent-soft) !important; backdrop-filter: none !important; }
+.p-card > .p-card-header, .grid-kpi > .p-card, .kpi-card { background: var(--legal-surface-strong) !important; }
+.page-band-title::after { background: var(--saas-disclosure-accent); }
+.saas-act--primary { background: var(--saas-action-bg); color: var(--saas-action-ink); border-color: var(--saas-action-bg); }
+.saas-act--primary:hover { background: var(--saas-action-hover); }
+/* Every existing expandable surface gets the same quiet accent. */
+:where(details > summary, button[aria-expanded]):not(.nav-group-head):not(.p-select-dropdown):not(.p-multiselect-dropdown):not(.p-datepicker-dropdown) {
+  accent-color: var(--saas-disclosure-accent);
+}
+details > summary::marker { color: var(--saas-disclosure-accent); }
+:where(.p-accordionheader, .p-fieldset-legend, .p-panel-header) { border-color: var(--saas-border); }
+.p-accordionheader-toggle-icon, .p-fieldset-toggle-icon, .p-panel-toggle-button { color: var(--saas-primary) !important; }
