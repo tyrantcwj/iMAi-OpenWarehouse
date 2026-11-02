@@ -11,19 +11,19 @@
       "sha256": "a61f0c544b9334ce534c01ee1a105cc1ef5c5f258917ba38556fbe37336eb987"
     },
     "cream/charts.json": {
-      "sha256": "8f7ccaa7fa95addd7b175a899f9540601ed4a88f68f6164158d19ecfc9774edc"
+      "sha256": "b6d1d94f2bb97d47ae15fdce03c0ff3ea628a60f45af21156b877ceafbe8f954"
     },
     "cream/primevue.json": {
-      "sha256": "f4a0978edf88a39203535a04a1dd73489dfd45c0085276c9f1c48fbbf7421de5"
+      "sha256": "9ad2730272984d4f2e367a7a4449078fca39a36b24fd775d7f05b521b1810a3c"
     },
     "cream/theme.css": {
       "sha256": "bc3f8385857cfd103de2bab5530d7d883c7fd7d149f0a5c77f57f06b881ba253"
     },
     "cream/theme.json": {
-      "sha256": "3bce1347347949aeb588b26206573b845cfbb4d593f81274695b50949c35c7a2"
+      "sha256": "681dac6486ab525ad09fe27aca5481597b0b6aee6df8376f857ddc6490f822ef"
     },
     "cream/tokens.json": {
-      "sha256": "1ed63d5740d0f1b1e194040b30ac33a9588cd772b81bef55f701f77436fde60f"
+      "sha256": "29f944cbdc0cce22fd154ab980efefe8d8af94b856e442b14bb8a7cab33d5549"
     },
     "nexora/charts.json": {
       "sha256": "64e959c66e1a4ffaf318c21ad2f03809ca168acace0a502c1f661cca0154856b"
@@ -41,7 +41,7 @@
       "sha256": "0122802841598e30619e3e52b365913b1e96644fe55d3170a9e623a98fdb6ce6"
     },
     "tokens.css": {
-      "sha256": "696b96989bf52ae41aac380de7d34921fd2d518142c15576f78378c3de235232"
+      "sha256": "ffe46ab6a303f060cdd6c0edfe976aad6f3bdfea2d954871b400c188e3036340"
     }
   }
 }
