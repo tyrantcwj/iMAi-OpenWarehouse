@@ -1,0 +1,17 @@
+
+/* 工时日历：今天虚线，选中实线；重叠时选中态优先。 */
+.timesheet-inline-calendar .timesheet-day-cell--calendar-today {
+  box-shadow: none !important;
+  outline: 2px dashed var(--saas-primary);
+  outline-offset: -2px;
+}
+.timesheet-inline-calendar .p-datepicker-day-selected,
+.timesheet-inline-calendar .p-datepicker-day-selected-range {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.timesheet-inline-calendar .p-datepicker-day-selected .timesheet-day-cell,
+.timesheet-inline-calendar .p-datepicker-day-selected-range .timesheet-day-cell {
+  outline: 2px solid var(--saas-primary);
+  outline-offset: -2px;
+}

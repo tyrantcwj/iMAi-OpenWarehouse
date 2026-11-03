@@ -16,7 +16,7 @@
       "sha256": "b92bb019b8faa4240730f07442b56a7bd5ade8825eccc6b00e6736df9aafd539"
     },
     "nexora/theme.css": {
-      "sha256": "943fdf8ec457d4691094637bc49c69f67c3074bd2308a8b3afc4ecb66d04e0cd"
+      "sha256": "59aaebe055984a8e9d8d65603970c47b69ea8e0f1f8a6ffe1fbfd02f855af99a"
     },
     "nexora/theme.json": {
       "sha256": "4952afb31c0735dfaa6b406d78e4bf9dcf7099d96b8a3271684a3a94705f11e4"
@@ -26,6 +26,9 @@
     },
     "tokens.css": {
       "sha256": "6b454021b95def8c2aeb7067757844df8d824e1edfa15449f83f21243fbf4bf7"
+    },
+    "classic/theme.css": {
+      "sha256": "9fde428185715ad434224a3e0321d59e43382b51543d027ffda1f9cce97eb68f"
     }
   }
 }
